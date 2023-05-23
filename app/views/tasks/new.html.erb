@@ -1,0 +1,8 @@
+<%= form_with model: @task do |t| %>
+  <%= t.text_field :title, placeholder: @placeholder_name%>
+  <%= t.text_field :details, placeholder: @placeholder_details %>
+  <%= t.submit %>
+<% end %>
+
+
+<%= link_to "back to index", tasks_path %>
